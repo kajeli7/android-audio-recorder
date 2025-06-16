@@ -86,6 +86,14 @@ public class activity_main extends AppCompatActivity {
             }
         });
 
+        final Button btnView = findViewById(R.id.btn_view);
+        btnView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new android.content.Intent(activity_main.this, AudioListActivity.class));
+            }
+        });
+
 
     }
 
